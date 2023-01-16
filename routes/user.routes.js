@@ -1,5 +1,6 @@
 const express = require("express");
 const { UserModel } = require("../models/user.model");
+require("dotenv").config();
 
 const userRouter = express.Router();
 const jwt = require("jsonwebtoken");
@@ -40,7 +41,7 @@ userRouter.post("/login", async (req, res) => {
               exp: Math.floor(Date.now() / 1000) + 60 * 60,
               userID: user[0]._id,
             },
-            "masai"
+            process.env.key
           );
           res.send({ msg: "login successful", token: token });
         } else {

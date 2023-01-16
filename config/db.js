@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const connection = mongoose.connect(
-  "mongodb+srv://dheerajpal:dheerajpal@cluster0.lzhy20p.mongodb.net/socialapi?retryWrites=true&w=majority"
+  process.env.mongoURL
 );
 
 module.exports = {
