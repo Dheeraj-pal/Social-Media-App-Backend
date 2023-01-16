@@ -1,5 +1,5 @@
 {
-  {
+
     "name": "Social-Media-App-Backend",
     "version": "1.0.0",
     "description": "",
@@ -17,8 +17,7 @@
     "bugs": {
       "url": "https://github.com/Dheeraj-pal/Social-Media-App-Backend/issues"
     },
-    "homepage": "https://github.com/Dheeraj-pal/Social-Media-App-Backend#readme"
-  },
+    "homepage": "https://github.com/Dheeraj-pal/Social-Media-App-Backend#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",
